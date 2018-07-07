@@ -51,7 +51,8 @@ client.on('guildDelete', guild => {
 client.on('message', router);
 ```
 
-Then each command should live in its own file in `lib/commands`:
+Then each command can live in its own file in `lib/commands` for instance, or
+wherever you like (third argument when creating the router).
 
 ```js
 // In lib/commands/ping.js
@@ -74,9 +75,14 @@ Where:
 
 ## Thanks
 
-- **[@eslachance](https://github.com/eslachance)** for [The Perfect Lil' Bot](https://gist.github.com/eslachance/3349734a98d30011bb202f47342601d3). Awesome starting point.
+- **[@eslachance](https://github.com/eslachance)** for [The Perfect Lil'
+  Bot](https://gist.github.com/eslachance/3349734a98d30011bb202f47342601d3).
+  Awesome starting point.
+
+I strongly recommend to check above gist to see all the comments and examples
+in setting up your own little bot.
 
 ---
 
-                            \o/
+                                            \o/
 
