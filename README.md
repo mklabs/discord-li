@@ -10,6 +10,8 @@ Little routing framework for discord bots
 
     git clone https://github.com/mklabs/discord-li.git
     cd discord-li
+    # or yarn
+    npm install
     touch lib/commands/say.js
     
 **Usage**
@@ -65,5 +67,5 @@ Where:
     
 ## Thanks
 
-- @eslachance for this [gist](https://gist.github.com/eslachance/3349734a98d30011bb202f47342601d3)
+- **[@eslachance](https://github.com/eslachance)** for [The Perfect Lil' Bot](https://gist.github.com/eslachance/3349734a98d30011bb202f47342601d3)
     
