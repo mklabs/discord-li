@@ -8,7 +8,9 @@ Little routing framework for discord bots
 
 **Install**
 
-    npm i @mklabs/discord-li
+    git clone https://github.com/mklabs/discord-li.git
+    cd discord-li
+    touch lib/commands/say.js
     
 **Usage**
 
@@ -40,7 +42,26 @@ client.on('guildDelete', guild => {
 client.on('message', router(client));
 ```
 
-Then each command should live in its own file in `lib/commands`
+Then each command should live in its own file in `lib/commands`:
+
+```js
+// In lib/commands/ping.js
+module.exports = async (client, message, command, args) => {
+  // Calculates ping between sending a message and editing it, giving a nice round-trip latency.
+  // The second ping is an average latency between the bot and the websocket server (one-way, not round-trip)
+  const m = await message.channel.send('Ping?');
+  m.edit(`Pong! Latency is ${m.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ping)}ms`);
+};
+```
+
+Each command function should take `(client, message, command, args) => {}`
+
+Where:
+
+- `client` is the discord client
+- `message` is the original message
+- `command` is the actual command (ex: ping)
+- `args` are every arguments after the command as an array
     
 ## Thanks
 
