@@ -1,0 +1,29 @@
+{
+  "name": "discord-li",
+  "version": "1.0.0",
+  "description": "Routing framework for discord bots",
+  "main": "lib/router.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "discord.js": "^11.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mklabs/discord-li.git"
+  },
+  "keywords": [
+    "discord"
+  ],
+  "author": "Mickael Daniel <mklabs>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mklabs/discord-li/issues"
+  },
+  "homepage": "https://github.com/mklabs/discord-li#readme"
+}
